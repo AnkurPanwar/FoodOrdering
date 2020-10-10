@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="FoodCategoryCell" customModule="Assignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="zd1-VC-8R9">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dpm-96-iWv">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                <color key="backgroundColor" red="0.98420673609999998" green="0.75156503919999995" blue="0.58427506689999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Bqv-Ds-qg1"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Italian(1)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A69-Ym-Ro2">
+                                <rect key="frame" x="0.0" y="118" width="68" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dpm-96-iWv" secondAttribute="trailing" id="8OI-ju-bNg"/>
+                            <constraint firstItem="dpm-96-iWv" firstAttribute="top" secondItem="zd1-VC-8R9" secondAttribute="top" id="DYC-Vn-EGA"/>
+                            <constraint firstItem="A69-Ym-Ro2" firstAttribute="top" secondItem="dpm-96-iWv" secondAttribute="bottom" constant="18" id="HRu-v6-F3d"/>
+                            <constraint firstItem="A69-Ym-Ro2" firstAttribute="leading" secondItem="zd1-VC-8R9" secondAttribute="leading" id="Kzq-ct-NeZ"/>
+                            <constraint firstAttribute="width" constant="100" id="SmQ-nC-AQE"/>
+                            <constraint firstAttribute="height" constant="150" id="YjI-uK-MIA"/>
+                            <constraint firstItem="dpm-96-iWv" firstAttribute="leading" secondItem="zd1-VC-8R9" secondAttribute="leading" id="fCD-OR-Doj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="zd1-VC-8R9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ALg-Au-1cV"/>
+                <constraint firstAttribute="trailing" secondItem="zd1-VC-8R9" secondAttribute="trailing" id="DfB-eq-aWi"/>
+                <constraint firstItem="zd1-VC-8R9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="GLg-wl-TTX"/>
+                <constraint firstAttribute="bottom" secondItem="zd1-VC-8R9" secondAttribute="bottom" id="phU-Ux-vs5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="277" height="277"/>
+            <connections>
+                <outlet property="foodImageView" destination="dpm-96-iWv" id="rF4-fQ-tC1"/>
+                <outlet property="foodTypeLbl" destination="A69-Ym-Ro2" id="tEt-8j-I26"/>
+            </connections>
+            <point key="canvasLocation" x="31.884057971014496" y="78.348214285714278"/>
+        </collectionViewCell>
+    </objects>
+</document>
